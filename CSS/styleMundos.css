@@ -24,13 +24,43 @@
     transition-duration: 0.4s;
     cursor: pointer;
 }
-/******************CARDS*********************/
 
+/*****************Texto**********************/
+.texto{
+    text-align: center;
+    font-family: texto;
+    color:bisque;
+    height: 15rem;
+    text-decoration:underline;
+}
+
+/******************Cards*********************/
+.card{
+    margin-top: 20%;
+    background-image: url("../images/fondoCard.png");
+    font-family: texto;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    max-height: 600px;
+    min-height: 500px;
+    position: relative;
+}
+.card img{
+    max-height: 350px;
+    min-height: 200px;
+}
+.cardG img{
+    margin-left: 10%;
+    max-height:250px;
+    width: 80%;
+    
+}
 
   /***************Footer********************/
   #Footer{
-    position: absolute;width: 100%;
-    bottom: 0;
+    position: absolute;
+    width: 100%;
+    bottom: -1;
     left: 0;
   }
    .fondo_negro{
@@ -61,6 +91,7 @@
     #Footer{
         position: absolute;
         z-index: 1;
+        bottom: -1120px!important;
     }
     #Footer img{
         width: 50%;

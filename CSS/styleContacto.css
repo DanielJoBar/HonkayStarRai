@@ -1,4 +1,3 @@
-
 /****************************************************/
 /*  Contacto - Hoja de estilo                         */
 /*  Autor : Daniel Jódar Barbero                   */
@@ -23,7 +22,7 @@
     position: absolute;
 }
 #Contacto{
-    position: relative;
+    position: absolute;
     width: 100%;
     z-index: 0;
 }
@@ -44,8 +43,12 @@
 }
 
 
-.letras_grises{
-    color: rgb(83, 80, 80);
+
+/************Video de fondo****************/
+.video{
+    position:fixed;
+    height: 120%;
+    z-index:-1;
 }
 /************Botones************/
 .button{
@@ -71,9 +74,13 @@
     z-index: 0;
     position:absolute;
     width: 100%;
+    max-height: 100%;
 }
 .fondo_negro{
     background-color: rgb(0, 0, 0);
+}
+.letras_grises{
+    color: rgb(83, 80, 80);
 }
 /******************Media Queries***************/
 @media only screen and (width<=600px){
@@ -83,5 +90,6 @@
 }
 #Footer img{
     width: 50%;
+    bottom: -400px;
 }  
 }
